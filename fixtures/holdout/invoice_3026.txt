@@ -1,0 +1,8 @@
+RECHNUNG / INVOICE  Nr. INV-3026
+Rheinwerk GmbH, Industriestrasse 5, 50667 Koeln, Germany
+Datum: 2026-03-27   Faellig: 2026-04-26
+
+Artikel     Menge   Einzelpreis   Betrag
+WidgetA     4       250,00 EUR    1.000,00 EUR
+
+Gesamtbetrag: 1.000,00 EUR

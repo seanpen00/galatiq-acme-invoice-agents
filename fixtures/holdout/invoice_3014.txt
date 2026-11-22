@@ -1,0 +1,22 @@
+INVOICE
+
+Invoice No: INV-3014
+Invoice Date: 2026-03-16
+Due Date: 2026-04-15
+
+From:
+Meridian Parts Co.
+64 Meridian Road, Columbus, OH 43215
+
+Bill To:
+Acme Corp, Accounts Payable
+
+Description             Qty    Unit Price         Amount
+WidgetA                   4   $    250.00   $   1,000.00
+WidgetB                   2   $    500.00   $   1,000.00
+
+Subtotal: $2,000.00
+Tax (8%): $400.00
+Amount Due: $2,400.00
+
+Terms: Net 30

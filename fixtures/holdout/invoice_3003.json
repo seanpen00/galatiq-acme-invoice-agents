@@ -1,0 +1,24 @@
+{
+  "invoice": {
+    "number": "INV-3003",
+    "issued": "2026-03-07",
+    "due": "2026-04-06",
+    "currency": "USD"
+  },
+  "supplier": {
+    "name": "Pioneer Parts Inc.",
+    "address": "1450 Industrial Blvd, Tulsa, OK 74107"
+  },
+  "items": [
+    {
+      "product": "GadgetX",
+      "qty": 1,
+      "unit_price": 750.0,
+      "amount": 750.0
+    }
+  ],
+  "subtotal": 750.0,
+  "tax": 0.0,
+  "amount_due": 750.0,
+  "terms": "Net 30"
+}

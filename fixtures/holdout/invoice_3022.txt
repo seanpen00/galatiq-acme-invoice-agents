@@ -1,0 +1,20 @@
+INVOICE
+
+Invoice No: INV-3022
+Invoice Date: 2026-03-24
+Due Date: 2026-04-23
+
+From:
+Thames Precision Ltd
+14 Riverside Walk, Reading RG1 8DB, United Kingdom
+
+Bill To:
+Acme Corp, Accounts Payable
+
+Description             Qty    Unit Price         Amount
+WidgetA                   4   £    200.00   £     800.00
+
+Subtotal: £800.00
+Amount Due: £800.00
+
+Terms: Net 30

@@ -1,0 +1,6 @@
+Invoice,Supplier,Issued,Due,Description,Quantity,Rate,Amount
+INV-3002,Lakeside Components LLC,2026-03-05,2026-04-04,WidgetB,3,500.00,1500.00
+INV-3002,Lakeside Components LLC,2026-03-05,2026-04-04,WidgetA,2,250.00,500.00
+,,,,,,Subtotal,2000.00
+,,,,,,Shipping,50.00
+,,,,,,Total,2050.00

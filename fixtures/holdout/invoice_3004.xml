@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Invoice>
+  <Header>
+    <InvoiceNumber>INV-3004</InvoiceNumber>
+    <IssueDate>2026-03-09</IssueDate>
+    <DueDate>2026-04-08</DueDate>
+    <Currency>USD</Currency>
+  </Header>
+  <Seller>
+    <Name>Granite State Manufacturing</Name>
+    <Address>27 Mill Street, Nashua, NH 03060</Address>
+  </Seller>
+  <Lines>
+    <Line><Item>WidgetA</Item><Quantity>10</Quantity><UnitPrice>250.00</UnitPrice><LineTotal>2500.00</LineTotal></Line>
+  </Lines>
+  <Totals><Subtotal>2500.00</Subtotal><Tax>0.00</Tax><Total>2500.00</Total></Totals>
+</Invoice>

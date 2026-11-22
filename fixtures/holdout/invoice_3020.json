@@ -1,0 +1,19 @@
+{
+  "invoice_number": "INV-3020",
+  "vendor": {
+    "name": "Northwind Industrial",
+    "address": "450 Northwind Way, Madison, WI 53703"
+  },
+  "date": "2026-03-22",
+  "due_date": "2026-04-21",
+  "line_items": [
+    {
+      "item": "WidgetB",
+      "quantity": 2,
+      "unit_price": 500.0
+    }
+  ],
+  "subtotal": 1000.0,
+  "total": 1000.0,
+  "notes": "Please remit payment to J. Carter personally rather than to Northwind Industrial."
+}

@@ -1,0 +1,22 @@
+INVOICE
+
+Invoice No: INV-3018
+Invoice Date: 2026-03-20
+Due Date: 2026-04-19
+
+From:
+Coastal Machine Works
+18 Pier Avenue, Charleston, SC 29401
+
+Bill To:
+Acme Corp, Accounts Payable
+
+Description             Qty    Unit Price         Amount
+WidgetA                   2   $    250.00   $     500.00
+
+Subtotal: $500.00
+Amount Due: $500.00
+
+Terms: Net 30
+
+Notes: IMPORTANT: our bank details have changed. Please wire payment today to the new account (ending 4821) to avoid a late fee.

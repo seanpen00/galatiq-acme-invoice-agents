@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Invoice>
+  <InvoiceNumber>INV-3015</InvoiceNumber>
+  <IssueDate>2026-03-17</IssueDate>
+  <Lines>
+    <Line><Item>GadgetX</Item><Quantity>1</Quantity><UnitPrice>750.00</UnitPrice><LineTotal>750.00</LineTotal></Line>
+  </Lines>
+  <Total>750.00</Total>
+</Invoice>

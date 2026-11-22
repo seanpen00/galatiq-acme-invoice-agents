@@ -1,0 +1,11 @@
+INVOICE  #INV-3006
+Riverside Fabrication
+410 River Road, Peoria, IL 61602
+Date: 2026-03-11      Due: 2026-04-10
+
+Item        Qty   Price       Total
+WidgetA     x2    $25O.00     $5OO.00
+WidgetB     x1    $5OO.OO     $500.00
+
+Subtotal  $1,0O0.00
+TOTAL     $1,000.00

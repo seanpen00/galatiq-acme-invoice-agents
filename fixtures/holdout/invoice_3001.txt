@@ -1,0 +1,22 @@
+INVOICE
+
+Invoice No: INV-3001
+Invoice Date: 2026-03-02
+Due Date: 2026-04-01
+
+From:
+Brightline Supply Co.
+88 Commerce Park Drive, Dayton, OH 45414
+
+Bill To:
+Acme Corp, Accounts Payable
+
+Description             Qty    Unit Price         Amount
+WidgetA                   4   $    250.00   $   1,000.00
+GadgetX                   2   $    750.00   $   1,500.00
+
+Subtotal: $2,500.00
+Tax (6%): $150.00
+Amount Due: $2,650.00
+
+Terms: Net 30

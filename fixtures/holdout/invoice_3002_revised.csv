@@ -1,0 +1,7 @@
+Invoice,Supplier,Issued,Due,Description,Quantity,Rate,Amount
+INV-3002,Lakeside Components LLC,2026-03-08,2026-04-07,WidgetB,4,500.00,2000.00
+INV-3002,Lakeside Components LLC,2026-03-08,2026-04-07,WidgetA,2,250.00,500.00
+,,,,,,Subtotal,2500.00
+,,,,,,Shipping,50.00
+,,,,,,Total,2550.00
+,,,,,,Note,Revised invoice: one additional WidgetB per PO change

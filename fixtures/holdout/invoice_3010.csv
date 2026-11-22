@@ -1,0 +1,3 @@
+Invoice Number,Vendor,Invoice Date,Due Date,Item,Qty,Unit Price,Line Total
+INV-3010,Northgate Supplies,31/03/2026,30/04/2026,WidgetA,3,250.00,750.00
+,,,,,,Total:,750.00

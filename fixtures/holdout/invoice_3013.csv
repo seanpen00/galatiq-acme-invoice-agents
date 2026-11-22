@@ -1,0 +1,5 @@
+Invoice Number,Vendor,Date,Due Date,Item,Qty,Unit Price,Line Total
+INV-3013,Bayside Industrial,2026-03-15,2026-04-14,WidgetA,3,250.00,800.00
+INV-3013,Bayside Industrial,2026-03-15,2026-04-14,GadgetX,1,750.00,750.00
+,,,,,,Subtotal:,1550.00
+,,,,,,Total:,1550.00

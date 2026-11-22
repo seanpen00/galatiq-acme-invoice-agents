@@ -1,0 +1,7 @@
+DELIVERY CONFIRMATION
+
+PO reference: 7781
+Delivered: 3 cartons on 2026-03-12
+Received by: R. Lee, Acme loading dock
+
+This is a delivery notice, not a request for payment.

@@ -1,0 +1,20 @@
+INVOICE
+
+Invoice No: INV-3011
+Invoice Date: 2026-03-13
+Due Date: 2026-04-12
+
+From:
+Ironbridge Components
+12 Bridge Street, Pittsburgh, PA 15222
+
+Bill To:
+Acme Corp, Accounts Payable
+
+Description             Qty    Unit Price         Amount
+WidgetB                  12   $    500.00   $   6,000.00
+
+Subtotal: $6,000.00
+Amount Due: $6,000.00
+
+Terms: Net 30

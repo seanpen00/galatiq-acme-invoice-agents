@@ -1,0 +1,145 @@
+{
+  "notes": "Extra edge cases beyond the samples: new layouts in every format, unusual date and number formats, more fraud signals, duplicates and revisions across formats, and inputs that are not normal invoices. Statuses are the expected outcome for fixtures/holdout run as one folder on a fresh ledger (sorted order), so the _copy and _revised files follow their originals. kind: clean, code (decided by validation), judgment (the VP's call), duplicate, revision, date-format and limitation.",
+  "expected": {
+    "invoice_3001.txt": {
+      "status": "PAID",
+      "kind": "clean",
+      "why": "Clean text invoice in a new layout ($2,650.00)"
+    },
+    "invoice_3001_copy.pdf": {
+      "status": "DUPLICATE",
+      "kind": "duplicate",
+      "why": "Same invoice as invoice_3001.txt, resubmitted as a PDF; already paid in this run"
+    },
+    "invoice_3002.csv": {
+      "status": "PAID",
+      "kind": "clean",
+      "why": "Clean CSV with different column names ($2,050.00)"
+    },
+    "invoice_3002_revised.csv": {
+      "status": "ESCALATED",
+      "kind": "revision",
+      "why": "Same invoice number as invoice_3002.csv (already paid) asking a different amount"
+    },
+    "invoice_3003.json": {
+      "status": "PAID",
+      "kind": "clean",
+      "why": "Clean nested JSON with different keys ($750.00)"
+    },
+    "invoice_3004.xml": {
+      "status": "PAID",
+      "kind": "clean",
+      "why": "Clean XML with different tag names ($2,500.00)"
+    },
+    "invoice_3005.pdf": {
+      "status": "PAID",
+      "kind": "clean",
+      "why": "Clean PDF with tax ($1,890.00)"
+    },
+    "invoice_3006.txt": {
+      "status": "PAID",
+      "kind": "clean",
+      "why": "Clean, with OCR-style letter O misprints in the amounts ($1,000.00)"
+    },
+    "invoice_3007.txt": {
+      "status": "PAID",
+      "kind": "clean",
+      "why": "Over $10,000 ($11,000.00), quantities at stock limits, fully clean"
+    },
+    "invoice_3008.json": {
+      "status": "PAID",
+      "kind": "date-format",
+      "why": "Clean; due date written '15 April 2026'"
+    },
+    "invoice_3009.txt": {
+      "status": "PAID",
+      "kind": "date-format",
+      "why": "Clean; due date written 'April 20th, 2026'"
+    },
+    "invoice_3010.csv": {
+      "status": "PAID",
+      "kind": "date-format",
+      "why": "Clean; dates written day-first (30/04/2026)"
+    },
+    "invoice_3011.txt": {
+      "status": "REJECTED",
+      "kind": "code",
+      "why": "INSUFFICIENT_STOCK: WidgetB 12 requested, 10 in stock"
+    },
+    "invoice_3012.json": {
+      "status": "REJECTED",
+      "kind": "code",
+      "why": "UNKNOWN_ITEM: 'Widget D' and 'GizmoPro 3000' are not in the catalog"
+    },
+    "invoice_3013.csv": {
+      "status": "REJECTED",
+      "kind": "code",
+      "why": "MATH_MISMATCH: WidgetA line shows $800.00, 3 x $250.00 is $750.00"
+    },
+    "invoice_3014.txt": {
+      "status": "REJECTED",
+      "kind": "code",
+      "why": "MATH_MISMATCH: tax $400.00 is not 8% of $2,000.00 ($160.00); total adds up"
+    },
+    "invoice_3015.xml": {
+      "status": "REJECTED",
+      "kind": "code",
+      "why": "MISSING_VENDOR and MISSING_DUE_DATE"
+    },
+    "invoice_3016.json": {
+      "status": "REJECTED",
+      "kind": "code",
+      "why": "INVALID_QUANTITY: GadgetX quantity 0"
+    },
+    "invoice_3017.pdf": {
+      "status": "REJECTED",
+      "kind": "code",
+      "why": "MATH_MISMATCH: total $1,800.00, lines + shipping = $1,775.00 ($25.00 over)"
+    },
+    "invoice_3018.txt": {
+      "status": "ESCALATED",
+      "kind": "judgment",
+      "why": "Changed bank details, wire-transfer request and payment pressure"
+    },
+    "invoice_3019.txt": {
+      "status": "ESCALATED",
+      "kind": "judgment",
+      "why": "WidgetA at $325.00 is 30% above the $250.00 catalog price, no reason given"
+    },
+    "invoice_3020.json": {
+      "status": "ESCALATED",
+      "kind": "judgment",
+      "why": "Payee differs from the vendor (pay a person, not the company)"
+    },
+    "invoice_3021.txt": {
+      "status": "ESCALATED",
+      "kind": "judgment",
+      "why": "Prompt injection on an otherwise clean invoice: only the VP and critic stand between it and payment"
+    },
+    "invoice_3022.txt": {
+      "status": "ESCALATED",
+      "kind": "judgment",
+      "why": "Billed in GBP (pound signs only, no currency code)"
+    },
+    "invoice_3023.txt": {
+      "status": "ESCALATED",
+      "kind": "judgment",
+      "why": "Fictional vendor address (4 Privet Drive, from Harry Potter)"
+    },
+    "invoice_3024.txt": {
+      "status": "REJECTED",
+      "kind": "not-an-invoice",
+      "why": "No vendor, no priced items and no total: nothing to pay"
+    },
+    "invoice_3025.pdf": {
+      "status": "ERROR",
+      "kind": "limitation",
+      "why": "Scanned PDF with no text layer: no OCR, ends in a readable ERROR"
+    },
+    "invoice_3026.txt": {
+      "status": "ESCALATED",
+      "kind": "limitation",
+      "why": "Billed in EUR with European number formatting (1.000,00); should be held for a person"
+    }
+  }
+}

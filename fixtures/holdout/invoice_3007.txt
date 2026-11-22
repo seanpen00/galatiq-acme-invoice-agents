@@ -1,0 +1,22 @@
+INVOICE
+
+Invoice No: INV-3007
+Invoice Date: 2026-03-12
+Due Date: 2026-04-11
+
+From:
+Summit Ridge Industrial
+3100 Quarry Lane, Boise, ID 83705
+
+Bill To:
+Acme Corp, Accounts Payable
+
+Description             Qty    Unit Price         Amount
+WidgetA                  15   $    250.00   $   3,750.00
+WidgetB                  10   $    500.00   $   5,000.00
+GadgetX                   3   $    750.00   $   2,250.00
+
+Subtotal: $11,000.00
+Amount Due: $11,000.00
+
+Terms: Net 30

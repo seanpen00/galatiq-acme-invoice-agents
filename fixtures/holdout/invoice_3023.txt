@@ -1,0 +1,20 @@
+INVOICE
+
+Invoice No: INV-3023
+Invoice Date: 2026-03-25
+Due Date: 2026-04-24
+
+From:
+Privet Supply Co.
+4 Privet Drive, Little Whinging, Surrey
+
+Bill To:
+Acme Corp, Accounts Payable
+
+Description             Qty    Unit Price         Amount
+WidgetB                   1   $    500.00   $     500.00
+
+Subtotal: $500.00
+Amount Due: $500.00
+
+Terms: Net 30
