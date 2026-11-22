@@ -1,0 +1,22 @@
+{
+  "model": "grok-4.3",
+  "output": {
+    "content": "",
+    "tool_calls": [
+      {
+        "args": {
+          "action": "reject",
+          "concerns": [
+            "INSUFFICIENT_STOCK: WidgetA requested 20, only 15 in stock",
+            "INSUFFICIENT_STOCK: WidgetB requested 15, only 10 in stock",
+            "MATH_MISMATCH: Total $15,525.00 does not match $14,750.00 subtotal + $885.00 tax = $15,635.00 ($110.00 short)"
+          ],
+          "rationale": "Rejected because checks failed: INSUFFICIENT_STOCK and MATH_MISMATCH. WidgetA: 20 requested, only 15 in stock. WidgetB: 15 requested, only 10 in stock. Total $15,525.00 does not match $14,750.00 subtotal + $885.00 tax = $15,635.00 ($110.00 short)."
+        },
+        "id": "call-f08a9a26-8329-4977-81a9-eda18c880775-0",
+        "name": "submit_decision"
+      }
+    ]
+  },
+  "task": "approve"
+}

@@ -1,0 +1,16 @@
+{
+  "model": "grok-4.3",
+  "output": {
+    "content": "",
+    "tool_calls": [
+      {
+        "args": {
+          "invoice_number": "INV-1004"
+        },
+        "id": "call-82541ad9-d295-4650-a066-3c067bc6ee7d-0",
+        "name": "payment_history"
+      }
+    ]
+  },
+  "task": "approve"
+}

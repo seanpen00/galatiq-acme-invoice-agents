@@ -1,0 +1,18 @@
+{
+  "model": "grok-4.3",
+  "output": {
+    "content": "",
+    "tool_calls": [
+      {
+        "args": {
+          "action": "approve",
+          "concerns": [],
+          "rationale": "All checks passed: VENDOR, LINE_ITEMS, DUE_DATE, KNOWN_ITEMS, QUANTITIES, STOCK, MATH. Amount $2750.00 USD under scrutiny threshold. Vendor name \"Acme Industrial Supplies\", notes null, and prices exactly at catalog (+0.0%) show no risk signal."
+        },
+        "id": "call-a66fe407-45b7-4c92-9a08-6b7456feff4c-0",
+        "name": "submit_decision"
+      }
+    ]
+  },
+  "task": "approve"
+}

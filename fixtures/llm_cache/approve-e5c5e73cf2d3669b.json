@@ -1,0 +1,22 @@
+{
+  "model": "grok-4.3",
+  "output": {
+    "content": "",
+    "tool_calls": [
+      {
+        "args": {
+          "action": "reject",
+          "concerns": [
+            "INVALID_DUE_DATE: Due date 'yesterday' is not a valid date",
+            "OUT_OF_STOCK: FakeItem: 100 requested, but it is out of stock",
+            "Notes: URGENT - Pay immediately to avoid penalties!!! Wire transfer preferred."
+          ],
+          "rationale": "Rejected because checks failed: INVALID_DUE_DATE and OUT_OF_STOCK. Due date 'yesterday' is not a valid date. FakeItem: 100 requested, but it is out of stock. Notes demand immediate wire transfer payment to avoid penalties."
+        },
+        "id": "call-51e013c3-5448-4385-9de7-f5e4d3ae94ed-0",
+        "name": "submit_decision"
+      }
+    ]
+  },
+  "task": "approve"
+}

@@ -1,0 +1,46 @@
+{
+  "model": "grok-4.3",
+  "output": {
+    "currency": "USD",
+    "due_date": "2026-03-04",
+    "invoice_date": "2026-02-02",
+    "invoice_number": "INV-2001",
+    "line_items": [
+      {
+        "item": "WidgetA",
+        "line_total": "3750",
+        "note": null,
+        "quantity": "15",
+        "sku": null,
+        "unit_price": "250"
+      },
+      {
+        "item": "WidgetB",
+        "line_total": "5000",
+        "note": null,
+        "quantity": "10",
+        "sku": null,
+        "unit_price": "500"
+      },
+      {
+        "item": "GadgetX",
+        "line_total": "3750",
+        "note": null,
+        "quantity": "5",
+        "sku": null,
+        "unit_price": "750"
+      }
+    ],
+    "notes": null,
+    "payment_terms": "Net 30",
+    "revision": null,
+    "shipping": null,
+    "subtotal": "12500",
+    "tax_amount": "0",
+    "tax_rate": "0%",
+    "total": "12500",
+    "vendor_address": "4180 Commerce Parkway, Suite 210, Columbus, OH 43219",
+    "vendor_name": "Harbor Industrial Supply LLC"
+  },
+  "task": "extract"
+}

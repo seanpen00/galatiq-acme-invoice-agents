@@ -1,0 +1,20 @@
+{
+  "model": "grok-4.3",
+  "output": {
+    "content": "",
+    "tool_calls": [
+      {
+        "args": {
+          "action": "reject",
+          "concerns": [
+            "UNKNOWN_ITEM: Unknown item 'WidgetC': not in the inventory catalog"
+          ],
+          "rationale": "Rejected because checks failed: UNKNOWN_ITEM."
+        },
+        "id": "call-a77cb2b5-6e6b-4952-b0ee-31521668add2-0",
+        "name": "submit_decision"
+      }
+    ]
+  },
+  "task": "approve"
+}

@@ -1,0 +1,18 @@
+{
+  "model": "grok-4.3",
+  "output": {
+    "content": "",
+    "tool_calls": [
+      {
+        "args": {
+          "action": "approve",
+          "concerns": [],
+          "rationale": "Approved because all checks passed with no failures and amount $5000.00 is below scrutiny threshold. Vendor name \"Widgets Inc.\" and notes show no risk signals; prices match catalog exactly at +0.0% for both lines."
+        },
+        "id": "call-e984aeb2-7ee9-4dc9-9018-5bce0eb17120-0",
+        "name": "submit_decision"
+      }
+    ]
+  },
+  "task": "approve"
+}

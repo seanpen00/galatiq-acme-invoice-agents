@@ -1,0 +1,38 @@
+{
+  "model": "grok-4.3",
+  "output": {
+    "currency": "USD",
+    "due_date": null,
+    "invoice_date": "2026-01-15",
+    "invoice_number": "INV-1009",
+    "line_items": [
+      {
+        "item": "WidgetA",
+        "line_total": null,
+        "note": null,
+        "quantity": "-5",
+        "sku": null,
+        "unit_price": "250"
+      },
+      {
+        "item": "WidgetB",
+        "line_total": null,
+        "note": null,
+        "quantity": "2",
+        "sku": null,
+        "unit_price": "500"
+      }
+    ],
+    "notes": null,
+    "payment_terms": null,
+    "revision": null,
+    "shipping": null,
+    "subtotal": "1000",
+    "tax_amount": "0",
+    "tax_rate": "0.0",
+    "total": "-250",
+    "vendor_address": null,
+    "vendor_name": null
+  },
+  "task": "extract"
+}

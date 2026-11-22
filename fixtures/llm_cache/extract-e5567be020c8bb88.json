@@ -1,0 +1,46 @@
+{
+  "model": "grok-4.3",
+  "output": {
+    "currency": "USD",
+    "due_date": "2026-03-18",
+    "invoice_date": "2026-01-18",
+    "invoice_number": "INV-1005",
+    "line_items": [
+      {
+        "item": "WidgetA",
+        "line_total": null,
+        "note": null,
+        "quantity": "14",
+        "sku": null,
+        "unit_price": "250"
+      },
+      {
+        "item": "GadgetX",
+        "line_total": null,
+        "note": null,
+        "quantity": "8",
+        "sku": null,
+        "unit_price": "750"
+      },
+      {
+        "item": "WidgetB",
+        "line_total": null,
+        "note": null,
+        "quantity": "10",
+        "sku": null,
+        "unit_price": "500"
+      }
+    ],
+    "notes": null,
+    "payment_terms": "Net 60",
+    "revision": null,
+    "shipping": null,
+    "subtotal": "14500",
+    "tax_amount": "725",
+    "tax_rate": "0.05",
+    "total": "15225",
+    "vendor_address": "1600 Pennsylvania Ave, Washington, DC 20500",
+    "vendor_name": "Global Supply Chain Partners"
+  },
+  "task": "extract"
+}

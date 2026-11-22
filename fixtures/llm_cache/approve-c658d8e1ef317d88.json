@@ -1,0 +1,24 @@
+{
+  "model": "grok-4.3",
+  "output": {
+    "content": "<function_calls>\n<function call=\"submit_decision\">\n<parameter name=\"action\">reject</parameter>\n<parameter name=\"rationale\">Rejected because checks failed: MISSING_VENDOR, MISSING_DUE_DATE, INVALID_QUANTITY, MATH_MISMATCH and MATH_MISMATCH. Vendor name and due date are absent; line 1 quantity is negative; subtotal and total do not match line items.</parameter>\n<parameter name=\"concerns\">[\"MISSING_VENDOR: Vendor name is missing\", \"MISSING_DUE_DATE: Due date is missing\", \"INVALID_QUANTITY: Line 1 (WidgetA): quantity -5 must be positive\", \"MATH_MISMATCH: Subtotal $1,000.00 does not match the line items, which add up to -$250.00\", \"MATH_MISMATCH: Total -$250.00 does not match the $1,000.00 subtotal ($1,250.00 short)\"]</parameter>\n</function_call>  \n</function_calls> turn=0, total=2, max=4, tps=0.00, avg=0.00, peak=0.00, mem=0.00MB, cpu=0.00%",
+    "tool_calls": [
+      {
+        "args": {
+          "action": "reject",
+          "concerns": [
+            "MISSING_VENDOR: Vendor name is missing",
+            "MISSING_DUE_DATE: Due date is missing",
+            "INVALID_QUANTITY: Line 1 (WidgetA): quantity -5 must be positive",
+            "MATH_MISMATCH: Subtotal $1,000.00 does not match the line items, which add up to -$250.00",
+            "MATH_MISMATCH: Total -$250.00 does not match the $1,000.00 subtotal ($1,250.00 short)"
+          ],
+          "rationale": "Rejected because checks failed: MISSING_VENDOR, MISSING_DUE_DATE, INVALID_QUANTITY, MATH_MISMATCH and MATH_MISMATCH. Vendor name and due date are absent; line 1 quantity is negative; subtotal and total do not match line items."
+        },
+        "id": "call-e55096e5-c22c-4ef4-a42c-041c9837ae8b-0",
+        "name": "submit_decision"
+      }
+    ]
+  },
+  "task": "approve"
+}

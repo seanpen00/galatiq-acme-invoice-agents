@@ -1,0 +1,46 @@
+{
+  "model": "grok-4.3",
+  "output": {
+    "currency": "USD",
+    "due_date": "2026-02-27",
+    "invoice_date": "2026-01-27",
+    "invoice_number": "INV-1016",
+    "line_items": [
+      {
+        "item": "WidgetA",
+        "line_total": "1000",
+        "note": null,
+        "quantity": "4",
+        "sku": null,
+        "unit_price": "250"
+      },
+      {
+        "item": "WidgetB",
+        "line_total": "1000",
+        "note": null,
+        "quantity": "2",
+        "sku": null,
+        "unit_price": "500"
+      },
+      {
+        "item": "WidgetC",
+        "line_total": "1050",
+        "note": null,
+        "quantity": "3",
+        "sku": null,
+        "unit_price": "350"
+      }
+    ],
+    "notes": null,
+    "payment_terms": "Net 30",
+    "revision": null,
+    "shipping": null,
+    "subtotal": "3050",
+    "tax_amount": "183",
+    "tax_rate": "0.06",
+    "total": "3233",
+    "vendor_address": "100 Main St, Chicago, IL 60601",
+    "vendor_name": "Widgets Inc."
+  },
+  "task": "extract"
+}

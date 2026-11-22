@@ -1,0 +1,21 @@
+{
+  "model": "grok-4.3",
+  "output": {
+    "content": "",
+    "tool_calls": [
+      {
+        "args": {
+          "action": "reject",
+          "concerns": [
+            "INSUFFICIENT_STOCK: GadgetX requested 8, only 5 in stock",
+            "Vendor address 1600 Pennsylvania Ave, Washington, DC 20500 is a famous government landmark implausible for a supplier"
+          ],
+          "rationale": "Rejected because checks failed: INSUFFICIENT_STOCK. GadgetX requested 8 but only 5 in stock per validation. Amount 15225.00 USD exceeds scrutiny threshold but failure forces rejection regardless. Vendor address 1600 Pennsylvania Ave, Washington, DC 20500 is the White House, a fraud signal listed as extra concern."
+        },
+        "id": "call-640241f2-a9af-4c52-aa88-bbdb14d11c96-0",
+        "name": "submit_decision"
+      }
+    ]
+  },
+  "task": "approve"
+}

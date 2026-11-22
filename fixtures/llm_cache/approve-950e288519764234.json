@@ -1,0 +1,20 @@
+{
+  "model": "grok-4.3",
+  "output": {
+    "content": "",
+    "tool_calls": [
+      {
+        "args": {
+          "action": "escalate",
+          "concerns": [
+            "Vendor address is fictional TV-show address: 742 Evergreen Terrace, Springfield, IL 62704"
+          ],
+          "rationale": "All checks passed and amount under scrutiny threshold, but vendor address \"742 Evergreen Terrace, Springfield, IL 62704\" is a fictional TV-show address, triggering escalation for potential vendor impersonation. No other risk signals present."
+        },
+        "id": "call-08970d8f-baea-4a13-95c5-fb0f9ff6861a-0",
+        "name": "submit_decision"
+      }
+    ]
+  },
+  "task": "approve"
+}

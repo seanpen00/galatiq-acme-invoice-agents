@@ -1,0 +1,46 @@
+{
+  "model": "grok-4.3",
+  "output": {
+    "currency": null,
+    "due_date": "2026-02-28",
+    "invoice_date": "2026-01-29",
+    "invoice_number": "INV-1015",
+    "line_items": [
+      {
+        "item": "WidgetA",
+        "line_total": "2500",
+        "note": null,
+        "quantity": "10",
+        "sku": null,
+        "unit_price": "250"
+      },
+      {
+        "item": "WidgetB",
+        "line_total": "2500",
+        "note": null,
+        "quantity": "5",
+        "sku": null,
+        "unit_price": "500"
+      },
+      {
+        "item": "GadgetX",
+        "line_total": "1500",
+        "note": null,
+        "quantity": "2",
+        "sku": null,
+        "unit_price": "750"
+      }
+    ],
+    "notes": null,
+    "payment_terms": null,
+    "revision": null,
+    "shipping": null,
+    "subtotal": "6500",
+    "tax_amount": "0",
+    "tax_rate": "0%",
+    "total": "6500",
+    "vendor_address": null,
+    "vendor_name": "Reliable Components Inc."
+  },
+  "task": "extract"
+}

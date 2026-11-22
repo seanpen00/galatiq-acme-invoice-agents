@@ -1,0 +1,30 @@
+{
+  "model": "grok-4.3",
+  "output": {
+    "currency": "USD",
+    "due_date": "2026-01-30",
+    "invoice_date": "Jan 30 2026",
+    "invoice_number": "1002",
+    "line_items": [
+      {
+        "item": "GadgetX",
+        "line_total": null,
+        "note": null,
+        "quantity": "20",
+        "sku": null,
+        "unit_price": "750"
+      }
+    ],
+    "notes": null,
+    "payment_terms": "Net 30",
+    "revision": null,
+    "shipping": null,
+    "subtotal": null,
+    "tax_amount": null,
+    "tax_rate": null,
+    "total": "15000",
+    "vendor_address": null,
+    "vendor_name": "Gadgets Co."
+  },
+  "task": "extract"
+}

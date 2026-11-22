@@ -1,0 +1,20 @@
+{
+  "model": "grok-4.3",
+  "output": {
+    "content": "",
+    "tool_calls": [
+      {
+        "args": {
+          "action": "reject",
+          "concerns": [
+            "INSUFFICIENT_STOCK: GadgetX requested 20, only 5 in stock"
+          ],
+          "rationale": "Rejected because checks failed: INSUFFICIENT_STOCK. GadgetX: 20 requested, only 5 in stock. No other checks failed."
+        },
+        "id": "call-b591d66b-e693-4d63-a4b3-5705dc74e9f4-0",
+        "name": "submit_decision"
+      }
+    ]
+  },
+  "task": "approve"
+}

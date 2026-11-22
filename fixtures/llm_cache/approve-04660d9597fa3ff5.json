@@ -1,0 +1,18 @@
+{
+  "model": "grok-4.3",
+  "output": {
+    "content": "",
+    "tool_calls": [
+      {
+        "args": {
+          "action": "approve",
+          "concerns": [],
+          "rationale": "All checks passed with no failures. Amount $3000.00 USD is below scrutiny threshold. Prices match catalog exactly at +0.0% for both WidgetA and WidgetB. Vendor name Summit Manufacturing Co. and notes show no risk signals."
+        },
+        "id": "call-7c1bdbbd-1257-4f5a-8d2a-e0f0d24ba72a-0",
+        "name": "submit_decision"
+      }
+    ]
+  },
+  "task": "approve"
+}

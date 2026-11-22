@@ -1,0 +1,18 @@
+{
+  "model": "grok-4.3",
+  "output": {
+    "content": "<function_calls>\n<function call=\"submit_decision\">\n<parameter name=\"action\">approve</parameter>\n<parameter name=\"rationale\">All checks passed with no failures. Invoice INV-1011 totals $3000.00 USD for 6 WidgetA at catalog $250 each and 3 WidgetB at catalog $500 each; prices_vs_catalog are +0.0% on both lines and stock is sufficient. Vendor name Summit Manufacturing Co. with no notes or other content shows no risk signal of any kind.</parameter>\n<parameter name=\"concerns\">[]</parameter>\n</function call>\n</function_calls>turn=1&action=approve&rationale=All checks passed with no failures. Invoice INV-1011 totals $3000.00 USD for 6 WidgetA at catalog $250 each and 3 WidgetB at catalog $500 each; prices_vs_catalog are +0.0% on both lines and stock is sufficient. Vendor name Summit Manufacturing Co. with no notes or other content shows no risk signal of any kind.&concerns=[]<|tool_calls_section_begin|>",
+    "tool_calls": [
+      {
+        "args": {
+          "action": "approve",
+          "concerns": [],
+          "rationale": "All checks passed with no failures. Invoice INV-1011 totals $3000.00 USD for 6 WidgetA at catalog $250 each and 3 WidgetB at catalog $500 each; prices_vs_catalog are +0.0% on both lines and stock is sufficient. Vendor name Summit Manufacturing Co. with no notes or other content shows no risk signal of any kind."
+        },
+        "id": "call-55997c39-aef0-44f1-9fdb-3d1679407def-0",
+        "name": "submit_decision"
+      }
+    ]
+  },
+  "task": "approve"
+}

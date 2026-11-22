@@ -1,0 +1,38 @@
+{
+  "model": "grok-4.3",
+  "output": {
+    "currency": "USD",
+    "due_date": "2026-01-20",
+    "invoice_date": "2026-01-10",
+    "invoice_number": "INV-1008",
+    "line_items": [
+      {
+        "item": "SuperGizmo",
+        "line_total": null,
+        "note": null,
+        "quantity": "12",
+        "sku": null,
+        "unit_price": "400"
+      },
+      {
+        "item": "MegaSprocket",
+        "line_total": null,
+        "note": null,
+        "quantity": "6",
+        "sku": null,
+        "unit_price": "850"
+      }
+    ],
+    "notes": "From: billing@noproduct.biz\nTo: accounts@acmecorp.com\nSubject: Invoice Attached - Please Process\n\nPlease find the invoice details below:\n\n  Vendor: NoProd Industries\n  Invoice: INV-1008\n  Date: 2026-01-10\n  Due: 2026-01-20\n\n  Items Ordered:\n    - SuperGizmo       x12     $400.00 each\n    - MegaSprocket     x6      $850.00 each\n\n  Total: $9,900.00\n\nPlease process at your earliest convenience.",
+    "payment_terms": null,
+    "revision": null,
+    "shipping": null,
+    "subtotal": null,
+    "tax_amount": null,
+    "tax_rate": null,
+    "total": "9900",
+    "vendor_address": null,
+    "vendor_name": "NoProd Industries"
+  },
+  "task": "extract"
+}

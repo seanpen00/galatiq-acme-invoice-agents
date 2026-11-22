@@ -1,0 +1,46 @@
+{
+  "model": "grok-4.3",
+  "output": {
+    "currency": null,
+    "due_date": "02/28/2026",
+    "invoice_date": "01/28/2026",
+    "invoice_number": "INV-1007",
+    "line_items": [
+      {
+        "item": "WidgetA",
+        "line_total": "5000",
+        "note": null,
+        "quantity": "20",
+        "sku": null,
+        "unit_price": "250"
+      },
+      {
+        "item": "WidgetB",
+        "line_total": "7500",
+        "note": null,
+        "quantity": "15",
+        "sku": null,
+        "unit_price": "500"
+      },
+      {
+        "item": "GadgetX",
+        "line_total": "2250",
+        "note": null,
+        "quantity": "3",
+        "sku": null,
+        "unit_price": "750"
+      }
+    ],
+    "notes": null,
+    "payment_terms": null,
+    "revision": null,
+    "shipping": null,
+    "subtotal": "14750",
+    "tax_amount": "885",
+    "tax_rate": "6%",
+    "total": "15525",
+    "vendor_address": null,
+    "vendor_name": "MegaWidgets Corp"
+  },
+  "task": "extract"
+}

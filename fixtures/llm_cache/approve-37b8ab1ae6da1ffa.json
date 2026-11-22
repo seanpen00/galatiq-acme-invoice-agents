@@ -1,0 +1,21 @@
+{
+  "model": "grok-4.3",
+  "output": {
+    "content": "",
+    "tool_calls": [
+      {
+        "args": {
+          "action": "reject",
+          "concerns": [
+            "UNKNOWN_ITEM: Unknown item 'SuperGizmo': not in the inventory catalog",
+            "UNKNOWN_ITEM: Unknown item 'MegaSprocket': not in the inventory catalog"
+          ],
+          "rationale": "Rejected because checks failed: UNKNOWN_ITEM and UNKNOWN_ITEM."
+        },
+        "id": "call-22c5a710-eee4-4d6b-8333-eda5502c2332-0",
+        "name": "submit_decision"
+      }
+    ]
+  },
+  "task": "approve"
+}

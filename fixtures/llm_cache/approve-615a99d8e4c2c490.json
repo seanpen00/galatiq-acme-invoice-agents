@@ -1,0 +1,20 @@
+{
+  "model": "grok-4.3",
+  "output": {
+    "content": "",
+    "tool_calls": [
+      {
+        "args": {
+          "action": "approve",
+          "concerns": [
+            "Line 4: WidgetA +20.0% premium labeled as rush order"
+          ],
+          "rationale": "Approved because all checks passed: VENDOR, LINE_ITEMS, DUE_DATE, KNOWN_ITEMS, QUANTITIES, STOCK and MATH. Total 7185.00 USD with prices at or near catalog. Vendor name Consolidated Materials Group, notes and prices show no risk signal."
+        },
+        "id": "call-7002b53d-68f3-467d-b6c8-b68835d433b5-0",
+        "name": "submit_decision"
+      }
+    ]
+  },
+  "task": "approve"
+}

@@ -1,0 +1,46 @@
+{
+  "model": "grok-4.3",
+  "output": {
+    "currency": "USD",
+    "due_date": "25-Feb-2026",
+    "invoice_date": "26-Jan-2O26",
+    "invoice_number": "INV 1012",
+    "line_items": [
+      {
+        "item": "Widget A",
+        "line_total": "3000",
+        "note": null,
+        "quantity": "12",
+        "sku": null,
+        "unit_price": "250"
+      },
+      {
+        "item": "WidgetB",
+        "line_total": "3500",
+        "note": null,
+        "quantity": "7",
+        "sku": null,
+        "unit_price": "500"
+      },
+      {
+        "item": "Gadget X",
+        "line_total": "3000",
+        "note": null,
+        "quantity": "4",
+        "sku": null,
+        "unit_price": "750"
+      }
+    ],
+    "notes": "Ref PO-20260115. Deliver to warehouse dock B. Contact Jim at ext 4421 with questions.\n(formerly FastShip Ltd.)",
+    "payment_terms": "Net 30",
+    "revision": null,
+    "shipping": null,
+    "subtotal": "9500",
+    "tax_amount": "475",
+    "tax_rate": "5%",
+    "total": "9975",
+    "vendor_address": null,
+    "vendor_name": "QuickShip Distributers"
+  },
+  "task": "extract"
+}

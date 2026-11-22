@@ -1,0 +1,86 @@
+{
+  "model": "grok-4.3",
+  "output": {
+    "currency": "USD",
+    "due_date": "2026-03-24",
+    "invoice_date": "2026-01-24",
+    "invoice_number": "INV-1013",
+    "line_items": [
+      {
+        "item": "WidgetA",
+        "line_total": "3750",
+        "note": null,
+        "quantity": "15",
+        "sku": null,
+        "unit_price": "250"
+      },
+      {
+        "item": "WidgetB",
+        "line_total": "5000",
+        "note": null,
+        "quantity": "10",
+        "sku": null,
+        "unit_price": "500"
+      },
+      {
+        "item": "GadgetX",
+        "line_total": "3750",
+        "note": null,
+        "quantity": "5",
+        "sku": null,
+        "unit_price": "750"
+      },
+      {
+        "item": "WidgetA",
+        "line_total": "1200",
+        "note": "Volume discount",
+        "quantity": "5",
+        "sku": null,
+        "unit_price": "240"
+      },
+      {
+        "item": "WidgetB",
+        "line_total": "3840",
+        "note": "Volume discount",
+        "quantity": "8",
+        "sku": null,
+        "unit_price": "480"
+      },
+      {
+        "item": "GadgetX",
+        "line_total": "2250",
+        "note": "Expedited",
+        "quantity": "3",
+        "sku": null,
+        "unit_price": "750"
+      },
+      {
+        "item": "WidgetA",
+        "line_total": "500",
+        "note": "Replacement",
+        "quantity": "2",
+        "sku": null,
+        "unit_price": "250"
+      },
+      {
+        "item": "GadgetX",
+        "line_total": "750",
+        "note": "Sample",
+        "quantity": "1",
+        "sku": null,
+        "unit_price": "750"
+      }
+    ],
+    "notes": null,
+    "payment_terms": "Net 60",
+    "revision": null,
+    "shipping": null,
+    "subtotal": "21040",
+    "tax_amount": "1472.8",
+    "tax_rate": "7%",
+    "total": "22562.8",
+    "vendor_address": null,
+    "vendor_name": "Atlas Industrial Supply"
+  },
+  "task": "extract"
+}

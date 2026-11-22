@@ -1,0 +1,8 @@
+{
+  "model": "grok-4.3",
+  "output": {
+    "problems": [],
+    "verdict": "accept"
+  },
+  "task": "critic"
+}

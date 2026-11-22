@@ -1,0 +1,38 @@
+{
+  "model": "grok-4.3",
+  "output": {
+    "currency": "USD",
+    "due_date": "2026-02-20",
+    "invoice_date": "2026-01-20",
+    "invoice_number": "INV-1011",
+    "line_items": [
+      {
+        "item": "WidgetA",
+        "line_total": "1500",
+        "note": null,
+        "quantity": "6",
+        "sku": null,
+        "unit_price": "250"
+      },
+      {
+        "item": "WidgetB",
+        "line_total": "1500",
+        "note": null,
+        "quantity": "3",
+        "sku": null,
+        "unit_price": "500"
+      }
+    ],
+    "notes": null,
+    "payment_terms": "Net 30",
+    "revision": null,
+    "shipping": null,
+    "subtotal": "3000",
+    "tax_amount": "0",
+    "tax_rate": "0%",
+    "total": "3000",
+    "vendor_address": null,
+    "vendor_name": "Summit Manufacturing Co."
+  },
+  "task": "extract"
+}

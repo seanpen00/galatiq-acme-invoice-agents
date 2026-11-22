@@ -1,0 +1,30 @@
+{
+  "model": "grok-4.3",
+  "output": {
+    "currency": "USD",
+    "due_date": "yesterday",
+    "invoice_date": "2026-01-20",
+    "invoice_number": "INV-1003",
+    "line_items": [
+      {
+        "item": "FakeItem",
+        "line_total": null,
+        "note": null,
+        "quantity": "100",
+        "sku": null,
+        "unit_price": "1000"
+      }
+    ],
+    "notes": "URGENT - Pay immediately to avoid penalties!!! Wire transfer preferred.",
+    "payment_terms": "Immediate",
+    "revision": null,
+    "shipping": null,
+    "subtotal": null,
+    "tax_amount": null,
+    "tax_rate": null,
+    "total": "100000",
+    "vendor_address": null,
+    "vendor_name": "Fraudster LLC"
+  },
+  "task": "extract"
+}

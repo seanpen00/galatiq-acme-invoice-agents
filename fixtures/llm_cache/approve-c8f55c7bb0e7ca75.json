@@ -1,0 +1,20 @@
+{
+  "model": "grok-4.3",
+  "output": {
+    "content": "",
+    "tool_calls": [
+      {
+        "args": {
+          "action": "escalate",
+          "concerns": [
+            "Notes give previous company name: formerly FastShip Ltd."
+          ],
+          "rationale": "Escalate because notes state \"(formerly FastShip Ltd.)\", a change of vendor identity. All checks passed (VENDOR, LINE_ITEMS, DUE_DATE, KNOWN_ITEMS, QUANTITIES, STOCK, MATH), prices match catalog exactly, amount 9975.00 USD under scrutiny threshold, currency USD. No other risk signals present."
+        },
+        "id": "call-6e52a3b8-311c-4cf9-8cd5-2a892430e703-0",
+        "name": "submit_decision"
+      }
+    ]
+  },
+  "task": "approve"
+}

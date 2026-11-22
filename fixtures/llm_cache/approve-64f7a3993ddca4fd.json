@@ -1,0 +1,18 @@
+{
+  "model": "grok-4.3",
+  "output": {
+    "content": "The invoice shows no risk signals and all checks passed, so it is approved. Vendor name Reliable Components Inc., notes (null) and prices (exactly matching catalog at +0.0% on every line) show no risk signal. No address is present, which is normal. \n\n<function_calls>\n<function call=\"submit_decision\">\n<parameter name=\"action\">approve</parameter>\n<parameter name=\"rationale\">The invoice shows no risk signals and all checks passed, so it is approved. Vendor name Reliable Components Inc., notes (null) and prices (exactly matching catalog at +0.0% on every line) show no risk signal. No address is present, which is normal.</parameter>\n<parameter name=\"concerns\">[]</parameter>\n</function_call>\n</function_calls>end\n\nThe invoice shows no risk signals and all checks passed, so it is approved. Vendor name Reliable Components Inc., notes (null) and prices (exactly matching catalog at +0.0% on every line) show no risk signal. No address is present, which is normal.",
+    "tool_calls": [
+      {
+        "args": {
+          "action": "approve",
+          "concerns": [],
+          "rationale": "The invoice shows no risk signals and all checks passed, so it is approved. Vendor name Reliable Components Inc., notes (null) and prices (exactly matching catalog at +0.0% on every line) show no risk signal. No address is present, which is normal."
+        },
+        "id": "call-e7cedf37-f1db-4b11-8db2-da0563eae849-0",
+        "name": "submit_decision"
+      }
+    ]
+  },
+  "task": "approve"
+}

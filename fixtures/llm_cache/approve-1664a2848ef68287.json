@@ -1,0 +1,23 @@
+{
+  "model": "grok-4.3",
+  "output": {
+    "content": "The invoice must be rejected because of failed checks. \n\n**Rationale:** Rejected because checks failed: INSUFFICIENT_STOCK (WidgetA: 22 requested across 3 lines, only 15 in stock), INSUFFICIENT_STOCK (WidgetB: 18 requested across 2 lines, only 10 in stock), INSUFFICIENT_STOCK (GadgetX: 9 requested across 3 lines, only 5 in stock) and MATH_MISMATCH (Total $22,562.80 does not match $21,040.00 subtotal + $1,472.80 tax = $22,512.80 ($50.00 over)). No other decision is possible when failures exist. \n\n**Concerns:** [\"INSUFFICIENT_STOCK: WidgetA: 22 requested across 3 lines, only 15 in stock\", \"INSUFFICIENT_STOCK: WidgetB: 18 requested across 2 lines, only 10 in stock\", \"INSUFFICIENT_STOCK: GadgetX: 9 requested across 3 lines, only 5 in stock\", \"MATH_MISMATCH: Total $22,562.80 does not match $21,040.00 subtotal + $1,472.80 tax = $22,512.80 ($50.00 over)\"]",
+    "tool_calls": [
+      {
+        "args": {
+          "action": "reject",
+          "concerns": [
+            "INSUFFICIENT_STOCK: WidgetA: 22 requested across 3 lines, only 15 in stock",
+            "INSUFFICIENT_STOCK: WidgetB: 18 requested across 2 lines, only 10 in stock",
+            "INSUFFICIENT_STOCK: GadgetX: 9 requested across 3 lines, only 5 in stock",
+            "MATH_MISMATCH: Total $22,562.80 does not match $21,040.00 subtotal + $1,472.80 tax = $22,512.80 ($50.00 over)"
+          ],
+          "rationale": "Rejected because checks failed: INSUFFICIENT_STOCK (WidgetA: 22 requested across 3 lines, only 15 in stock), INSUFFICIENT_STOCK (WidgetB: 18 requested across 2 lines, only 10 in stock), INSUFFICIENT_STOCK (GadgetX: 9 requested across 3 lines, only 5 in stock) and MATH_MISMATCH (Total $22,562.80 does not match $21,040.00 subtotal + $1,472.80 tax = $22,512.80 ($50.00 over)). No other decision is possible when failures exist."
+        },
+        "id": "call-7a5bcc44-722d-41a6-a01b-e76f477188d0-0",
+        "name": "submit_decision"
+      }
+    ]
+  },
+  "task": "approve"
+}

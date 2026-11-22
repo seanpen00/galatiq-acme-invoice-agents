@@ -1,0 +1,18 @@
+{
+  "model": "grok-4.3",
+  "output": {
+    "content": "",
+    "tool_calls": [
+      {
+        "args": {
+          "action": "approve",
+          "concerns": [],
+          "rationale": "Approved because all checks passed (VENDOR, LINE_ITEMS, DUE_DATE, KNOWN_ITEMS, QUANTITIES, STOCK, MATH) with no failures and prices match catalog exactly at +0.0%. Amount $12500.00 exceeds $10000 scrutiny threshold but vendor_name \"Harbor Industrial Supply LLC\", vendor_address \"4180 Commerce Parkway, Suite 210, Columbus, OH 43219\" (a standard commercial suite in an industrial park), notes, and lines show no risk signals. Currency is USD with no urgency or other concerns."
+        },
+        "id": "call-0fec5b1e-d44e-4f82-8a12-eafde231c37b-0",
+        "name": "submit_decision"
+      }
+    ]
+  },
+  "task": "approve"
+}
