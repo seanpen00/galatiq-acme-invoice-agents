@@ -1,0 +1,123 @@
+{
+  "model": "grok-4.3",
+  "code_only": {
+    "invoice_1001.txt": {
+      "fresh": "PAID",
+      "shared": "PAID"
+    },
+    "invoice_1002.txt": {
+      "fresh": "REJECTED",
+      "shared": "REJECTED"
+    },
+    "invoice_1003.txt": {
+      "fresh": "REJECTED",
+      "shared": "REJECTED"
+    },
+    "invoice_1004.json": {
+      "fresh": "PAID",
+      "shared": "PAID"
+    },
+    "invoice_1004_revised.json": {
+      "fresh": "PAID",
+      "shared": "ESCALATED"
+    },
+    "invoice_1005.json": {
+      "fresh": "REJECTED",
+      "shared": "REJECTED"
+    },
+    "invoice_1006.csv": {
+      "fresh": "PAID",
+      "shared": "PAID"
+    },
+    "invoice_1007.csv": {
+      "fresh": "REJECTED",
+      "shared": "REJECTED"
+    },
+    "invoice_1008.txt": {
+      "fresh": "REJECTED",
+      "shared": "REJECTED"
+    },
+    "invoice_1009.json": {
+      "fresh": "REJECTED",
+      "shared": "REJECTED"
+    },
+    "invoice_1010.txt": {
+      "fresh": "PAID",
+      "shared": "PAID"
+    },
+    "invoice_1011.pdf": {
+      "fresh": "PAID",
+      "shared": "PAID"
+    },
+    "invoice_1011.txt": {
+      "fresh": "PAID",
+      "shared": "DUPLICATE"
+    },
+    "invoice_1012.pdf": {
+      "fresh": "PAID",
+      "shared": "PAID"
+    },
+    "invoice_1012.txt": {
+      "fresh": "PAID",
+      "shared": "DUPLICATE"
+    },
+    "invoice_1013.json": {
+      "fresh": "REJECTED",
+      "shared": "REJECTED"
+    },
+    "invoice_1013.pdf": {
+      "fresh": "REJECTED",
+      "shared": "REJECTED"
+    },
+    "invoice_1014.xml": {
+      "fresh": "ESCALATED",
+      "shared": "ESCALATED"
+    },
+    "invoice_1015.csv": {
+      "fresh": "PAID",
+      "shared": "PAID"
+    },
+    "invoice_1016.json": {
+      "fresh": "REJECTED",
+      "shared": "REJECTED"
+    },
+    "invoice_2001.txt": {
+      "fresh": "PAID",
+      "shared": null
+    },
+    "invoice_2002.txt": {
+      "fresh": "REJECTED",
+      "shared": null
+    }
+  },
+  "replay_shared": {
+    "invoice_1001.txt": "PAID",
+    "invoice_1002.txt": "REJECTED",
+    "invoice_1003.txt": "REJECTED",
+    "invoice_1004.json": "ESCALATED",
+    "invoice_1004_revised.json": "ESCALATED",
+    "invoice_1005.json": "REJECTED",
+    "invoice_1006.csv": "PAID",
+    "invoice_1007.csv": "REJECTED",
+    "invoice_1008.txt": "REJECTED",
+    "invoice_1009.json": "REJECTED",
+    "invoice_1010.txt": "PAID",
+    "invoice_1011.pdf": "PAID",
+    "invoice_1011.txt": "DUPLICATE",
+    "invoice_1012.pdf": "ESCALATED",
+    "invoice_1012.txt": "ESCALATED",
+    "invoice_1013.json": "REJECTED",
+    "invoice_1013.pdf": "REJECTED",
+    "invoice_1014.xml": "ESCALATED",
+    "invoice_1015.csv": "PAID",
+    "invoice_1016.json": "REJECTED"
+  },
+  "replay_fixtures": {
+    "invoice_2001.txt": "PAID",
+    "invoice_2002.txt": "REJECTED"
+  },
+  "notes": {
+    "code_only": "Hand-checked extractions (tests/fixtures/extractions), an approve-everything VP and an accept-everything critic, so every status comes from code: grounding, validation, the guardrail and the ledger. fresh: each file on a freshly seeded DB. shared: data/invoices in sorted order on one DB (null for the fixtures/invoices files), where 1011.txt and 1012.txt are DUPLICATEs of their PDF twins and 1004_revised is ESCALATED because 1004 was paid a different amount.",
+    "replay": "main.py --json over data/invoices (replay_shared) and fixtures/invoices (replay_fixtures), each folder on one fresh DB, served from fixtures/llm_cache (recorded with grok-4.3). Every extraction passes its grounding check on the first attempt, and every failure code matches code_only. Every file with a failed check is REJECTED with each code cited; 1003's wire-transfer pressure, 1005's White House address and 2002's prompt injection are also listed as concerns. Escalations are soft signals the VP cited: 1004 and 1004_revised (742 Evergreen Terrace is a TV-show address; on the revision the VP first calls payment_history(INV-1004)), 1012 pdf/txt (vendor rename 'formerly FastShip Ltd.') and 1014 (EUR). The VP approves 1001, 1006, 1010 (its +20% rush line listed as a concern), 1011 pdf/txt, 1015 and 2001 ($12,500, over the scrutiny threshold), and the critic accepts all 7; 1011.txt is then a DUPLICATE of its paid PDF twin."
+  }
+}
