@@ -1,0 +1,32 @@
+{
+  "invoice_number": "INV-1011",
+  "revision": null,
+  "vendor_name": "Summit Manufacturing Co.",
+  "vendor_address": null,
+  "invoice_date": "2026-01-20",
+  "due_date": "2026-02-20",
+  "currency": null,
+  "line_items": [
+    {
+      "item": "WidgetA",
+      "quantity": 6,
+      "unit_price": 250.00,
+      "line_total": 1500.00,
+      "note": null
+    },
+    {
+      "item": "WidgetB",
+      "quantity": 3,
+      "unit_price": 500.00,
+      "line_total": 1500.00,
+      "note": null
+    }
+  ],
+  "subtotal": null,
+  "tax_rate": null,
+  "tax_amount": null,
+  "shipping": null,
+  "total": 3000.00,
+  "payment_terms": null,
+  "notes": null
+}

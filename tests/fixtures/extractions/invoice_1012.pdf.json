@@ -1,0 +1,39 @@
+{
+  "invoice_number": "INV 1012",
+  "revision": null,
+  "vendor_name": "QuickShip Distributers",
+  "vendor_address": null,
+  "invoice_date": "26-Jan-2O26",
+  "due_date": "25-Feb-2026",
+  "currency": null,
+  "line_items": [
+    {
+      "item": "Widget A",
+      "quantity": 12,
+      "unit_price": 250,
+      "line_total": 3000.00,
+      "note": null
+    },
+    {
+      "item": "WidgetB",
+      "quantity": 7,
+      "unit_price": 500,
+      "line_total": 3500.00,
+      "note": null
+    },
+    {
+      "item": "Gadget X",
+      "quantity": 4,
+      "unit_price": 750,
+      "line_total": 3000.00,
+      "note": null
+    }
+  ],
+  "subtotal": 9500.00,
+  "tax_rate": "5%",
+  "tax_amount": 475.00,
+  "shipping": null,
+  "total": 9975.00,
+  "payment_terms": "Net 30",
+  "notes": "(formerly FastShip Ltd.)\nRef PO-20260115. Deliver to warehouse dock B. Contact Jim at ext 4421 with questions."
+}

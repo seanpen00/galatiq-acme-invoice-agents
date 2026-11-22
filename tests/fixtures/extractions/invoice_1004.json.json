@@ -1,0 +1,32 @@
+{
+  "invoice_number": "INV-1004",
+  "revision": null,
+  "vendor_name": "Precision Parts Ltd.",
+  "vendor_address": "742 Evergreen Terrace, Springfield, IL 62704",
+  "invoice_date": "2026-01-22",
+  "due_date": "2026-02-22",
+  "currency": "USD",
+  "line_items": [
+    {
+      "item": "WidgetA",
+      "quantity": 3,
+      "unit_price": 250.00,
+      "line_total": null,
+      "note": null
+    },
+    {
+      "item": "WidgetB",
+      "quantity": 2,
+      "unit_price": 500.00,
+      "line_total": null,
+      "note": null
+    }
+  ],
+  "subtotal": 1750.00,
+  "tax_rate": "0.08",
+  "tax_amount": 140.00,
+  "shipping": null,
+  "total": 1890.00,
+  "payment_terms": "Net 30",
+  "notes": null
+}
