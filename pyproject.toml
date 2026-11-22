@@ -1,0 +1,5 @@
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+markers = ["live: calls Grok for real (needs XAI_API_KEY and network); run with: pytest -m live"]
+addopts = "-m 'not live'"
