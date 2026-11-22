@@ -1,0 +1,6 @@
+[browser]
+gatherUsageStats = false  # no usage stats sent to Streamlit
+
+[server]
+headless = true  # no first-run email prompt; open the URL it prints
+address = "localhost"  # this machine only: the page has an Approve-and-pay button
